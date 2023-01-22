@@ -69,6 +69,7 @@ body {
   outline: none;
   overflow: hidden;
   cursor: pointer;
+  -webkit-filter: drop-shadow(0 2px 8px rgba(39, 94, 254, 0.32));
   filter: drop-shadow(0 2px 8px rgba(39, 94, 254, 0.32));
   transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   margin-left: 0.7rem;
@@ -84,6 +85,7 @@ body {
   height: 100%;
   background: var(--btn-color);
   border-radius: 6px;
+  -webkit-transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
@@ -91,10 +93,12 @@ body {
 .buttons span span {
   display: inline-flex;
   vertical-align: middle;
+  -webkit-transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .buttons span {
+  -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
 }
 
@@ -104,6 +108,7 @@ body {
 
 .buttons span span {
   margin-left: 8px;
+  -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
 
@@ -116,17 +121,24 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 .buttons ul li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 
 .buttons ul li a {
   display: inline-flex;
   vertical-align: middle;
+  -webkit-transform: translateY(55px);
+  -ms-transform: translateY(55px);
   transform: translateY(55px);
+  -webkit-transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
@@ -135,27 +147,36 @@ body {
 }
 
 .buttons:hover::before {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
 .buttons:hover span,
 .buttons:hover span span {
+  -webkit-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
   transform: translateY(-55px);
 }
 
 .buttons:hover ul li a {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
   transform: translateY(0);
 }
 
 .buttons:hover ul li:nth-child(1) a {
+  -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
 
 .buttons:hover ul li:nth-child(2) a {
+  -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
 
 .buttons:hover ul li:nth-child(3) a {
+  -webkit-transition-delay: 0.25s;
   transition-delay: 0.25s;
 }
 
