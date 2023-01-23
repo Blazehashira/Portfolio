@@ -8,6 +8,10 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+.btn-font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* Intro section */
 .first-sect {
   margin: 7rem 0 2rem;
@@ -59,7 +63,6 @@ body {
   --btn-color: #275efe;
   position: relative;
   padding: 10px 15px;
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
